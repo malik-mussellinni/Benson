@@ -1,0 +1,591 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #0C0C0C;
+    --lightBlue : #7DF9FF;
+    --yellow: #FFD700;
+    --white: white;
+    --blue:blue;
+}
+
+/* 0- 600 media querry */
+@media (max-width: 600px) {
+
+/* overall styling */
+p{
+    color:  var(--white);
+    font-size: 12pt;
+}
+
+h2{
+    color: var(--yellow);
+    font-size: 16pt;
+}
+
+    /* body section */
+body{
+    background: var(--black);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+    
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 2rem;
+    margin-bottom: 10px;
+    position: sticky;
+    background-color: var(--black);
+}
+.header-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-icons a{
+    color: var(--lightBlue);
+    font-size: 8pt;
+}
+.header-icons a:hover{
+    color: var(--yellow);
+    transform: scale(1.15);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+.logo{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+/* .hero-section */
+.hero-section{
+    width: 100%;
+    padding-bottom: 68%;
+    background-image: url(images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 60px;
+}
+.hero-section-inner-content{
+    position: absolute;
+    bottom: 4px;
+    margin: 2% 0 4% 5%;
+}
+.hero-section h2{
+    color: var(--blue);
+}
+.hero-section p{
+    color: var(--lightBlue);
+}
+
+
+/* mission-section */
+
+.mission-section{
+    margin: 0px 5%;
+}
+.mission-section h2{
+    margin: 5% 0 20px 0;
+}
+
+
+/* who-am-section"  */
+.who-am-section{
+    margin: 10% 0;
+    background-color: var(--lightBlue);
+    padding: 5% 5% 5% 5%;
+}
+.who-am-section h2{
+    color: var(--blue);
+    margin: 0;
+    padding: 10% 0 5%;
+}
+.who-am-section p{
+    color: var(--black);
+    padding: 0 0 10% 0;
+}
+.who-am-section-container{
+
+    align-items: center;
+}
+.who-am-section-container-image-section{
+    background-image: url(images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    max-width: 540px;
+    max-height: 540px;
+}
+/* footer section */
+footer{
+    background-color: var(--black);
+    padding: 0 5%;
+    margin: 0  0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: var(--yellow);
+    font-weight: bolder;
+}
+footer p span{
+    color: var(--blue);
+}
+}
+
+
+
+
+
+/* 601-1000 media querry */
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    /* overall styling */
+    p{
+        color:  var(--black);
+        font-size: 16pt;
+        font-weight: 500;
+    }
+    
+    h2{
+        color: var(--blue);
+        font-size: 20pt;
+        font-weight: 800;
+    }
+    
+        /* body section */
+    body{
+        background: var(--white);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    img{
+        width: 100%;
+    }
+        
+    .header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 2rem;
+        margin-bottom: 0;
+        position: sticky;
+        background-color: var(--black);
+        padding: 10px 0;
+    }
+    .header-icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-icons a{
+        color: var(--lightBlue);
+        font-size: 16pt;
+        font-weight: 500;
+    }
+    .header-icons a:hover{
+        color: var(--yellow);
+        transform: scale(1.15);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .logo{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    /* .hero-section */
+    .hero-section{
+        width: 100%;
+        padding-bottom: 55%;
+        background-image: url(images/2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 60px;
+    }
+    .hero-section-inner-content{
+        position: absolute;
+        bottom: 2%;
+        margin: 2% 0 4% 5%;
+    }
+    .hero-section h2{
+        color: var(--yellow);
+    }
+    .hero-section p{
+        color: var(--white);
+    }
+    
+    
+    /* mission-section */
+    
+    .mission-section{
+        margin: 0px 5%;
+    }
+    .mission-section h2{
+        margin: 5% 0 20px 0;
+    }
+    
+    
+    /* who-am-section"  */
+    .who-am-section{
+        margin: 10% 0 0;
+        background-color: var(--black);
+        padding: 5% 5% 5% 5%;
+    }
+    .who-am-section h2{
+        color: var(--yellow);
+        margin: 0;
+        padding: 10% 0 5%;
+    }
+    .who-am-section p{
+        color: var(--white);
+        padding: 0 0 10% 0;
+    }
+    .who-am-section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2%;
+    }
+    .who-am-section-container-image-section{
+        background-image: url(images/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+        max-width: 540px;
+        max-height: 540px;
+    }
+    /* footer section */
+    footer{
+        background-color: var(--black);
+        padding: 3% 5%;
+        margin: 0  0px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        color: var(--yellow);
+        font-weight: bolder;
+    }
+    footer p span{
+        color: var(--blue);
+    }
+}
+    
+
+/* 1001-2000 media querry */
+@media (min-width: 1001px) and (max-width: 2000px) {
+
+    /* overall styling */
+    p{
+        color:  var(--black);
+        font-size: 20pt;
+        font-weight: 500;
+    }
+    
+    h2{
+        color: var(--blue);
+        font-size: 24pt;
+        font-weight: 800;
+    }
+    
+        /* body section */
+    body{
+        background: var(--white);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    img{
+        width: 100%;
+    }
+        
+    .header{
+        height: 150px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 2rem;
+        margin-bottom: 0;
+        position: sticky;
+        background-color: var(--white);
+        padding: 10px 0 0 2%;
+    }
+    .header-icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-icons a{
+        color: var(--blue);
+        font-size: 23pt;
+        font-weight: 500;
+    }
+    .header-icons a:hover{
+        color: var(--black);
+        transform: scale(1.15);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .logo{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    /* .hero-section */
+    .hero-section{
+        width: 100%;
+        padding-bottom: 43%;
+        background-image: url(images/2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 0px;
+    }
+    .hero-section-inner-content{
+        position: absolute;
+        bottom: 2%;
+        margin: 2% 0 4% 5%;
+    }
+    .hero-section h2{
+        color: var(--yellow);
+    }
+    .hero-section p{
+        color: var(--white);
+    }
+    
+    
+    /* mission-section */
+    
+    .mission-section{
+        padding: 5% 5% 10%;
+        background-color: var(--black);
+    }
+    .mission-section p{
+        color: var(--white);
+    }
+    .mission-section h2{
+        margin: 5% 0 5% 0;
+        color: var(--yellow);
+    }
+    
+    
+    /* who-am-section"  */
+    .who-am-section{
+        background-color: var(--white);
+        padding: 5% 5% 5% 5%;
+    }
+    .who-am-section h2{
+        color: var(--blue);
+        margin: 0;
+        padding: 10% 0 5%;
+    }
+    .who-am-section p{
+        color: var(--black);
+        padding: 0 0 10% 0;
+    }
+    .who-am-section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2%;
+    }
+    .who-am-section-container-image-section{
+        background-image: url(images/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+    }
+    /* footer section */
+    footer{
+        background-color: var(--black);
+        padding: 3% 5%;
+        margin: 0  0px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        color: var(--yellow);
+        font-weight: bolder;
+    }
+    footer p span{
+        color: var(--blue);
+    }
+}
+
+
+/* 2001 + media querry */
+@media (min-width: 2001px) {
+
+    /* overall styling */
+    p{
+        color:  var(--white);
+        font-size: 60pt;
+    }
+    
+    h2{
+        color: var(--yellow);
+        font-size: 80pt;
+    }
+    
+        /* body section */
+    body{
+        background: var(--black);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    img{
+        width: 100%;
+    }
+        
+    .header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 2rem;
+        margin: 3%;
+        position: sticky;
+        background-color: var(--black);
+    }
+    .header-icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-icons a{
+        color: var(--lightBlue);
+        font-size: 60pt;
+    }
+    .header-icons a:hover{
+        color: var(--yellow);
+        transform: scale(1.15);
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .logo{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    /* .hero-section */
+    .hero-section{
+        width: 100%;
+        padding-bottom: 48%;
+        background-image: url(images/2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 60px;
+    }
+    .hero-section-inner-content{
+        position: absolute;
+        bottom: 4px;
+        margin: 2% 0 4% 5%;
+    }
+    .hero-section h2{
+        color: var(--blue);
+    }
+    .hero-section p{
+        color: var(--lightBlue);
+    }
+    
+    
+    /* mission-section */
+    
+    .mission-section{
+        margin: 0px 5%;
+    }
+    .mission-section h2{
+        margin: 10% 0 2% 0;
+    }
+    
+    
+    /* who-am-section"  */
+    .who-am-section{
+        margin: 10% 0;
+        background-color: var(--lightBlue);
+        padding: 5% 5% 5% 5%;
+    }
+    .who-am-section h2{
+        color: var(--blue);
+        margin: 0;
+        padding: 10% 0 5%;
+    }
+    .who-am-section p{
+        color: var(--black);
+        padding: 0 0 10% 0;
+    }
+    .who-am-section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .who-am-section-container-image-section{
+        background-image: url(images/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+    }
+    /* footer section */
+    footer{
+        background-color: var(--black);
+        padding: 0 5%;
+        margin: 0  0px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        color: var(--yellow);
+        font-weight: bolder;
+    }
+    footer p span{
+        color: var(--blue);
+    }
+    }
+    
